@@ -2,6 +2,10 @@
   "name": "landingpage-react",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
+=======
+  "homepage": "https://jaceksl1.github.io/LandingPage-React/",
+>>>>>>> 1de36470ab04f4ff3dd1979ccb8dd9a85cf7e8fe
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
