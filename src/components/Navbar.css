@@ -49,6 +49,8 @@
   color: white;
   display: none;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 @media screen and (max-width: 800px) {

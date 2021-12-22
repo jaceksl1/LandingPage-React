@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = ({ navbarLinks }) => {
   // Determines if the "menu icon" was clicked or not. Note that this icon is only visible when the window width is small.
@@ -14,13 +16,13 @@ const Navbar = ({ navbarLinks }) => {
     <nav className="navbar">
       <span className="navbar__logo">DogHotel</span>
       {menuClicked ? (
-        <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
+        <button className={"navbar__menu"} onClick={toggleMenuClick}>
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
       ) : (
-        <FiMenu
-          size={25}
-          className={"navbar__menu"}
-          onClick={toggleMenuClick}
-        />
+        <button className={"navbar__menu"} onClick={toggleMenuClick}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
       )}
       <ul
         className={
